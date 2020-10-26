@@ -31,7 +31,7 @@ class App extends Component {
 
 //delete a todoitem on button click
   deleteTodo = (id) => {
-    axios.delete(`https://my-json-server.typicode.com/manishmania20/dummy-data/todos${id}`)
+    axios.delete(`https://my-json-server.typicode.com/manishmania20/dummy-data/todos/${id}`)
       .then(res => this.setState({ todos: [...this.state.todos.filter(todo => 
         todo.id !== id)]
       }));
